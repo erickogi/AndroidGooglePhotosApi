@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GooglePhotos</string>
+    <string name="client_id">148357592852-6mbp15l978f1r0fg52pt39haibt3q71q.apps.googleusercontent.com</string>
+    <string name="client_secret">ucV63dBYBHTPOSajg_snnt26</string>
+    <string name="downloading">Initializing payment</string>
+    <string name="filter">Filter  By</string>
+    <string name="select">Filter</string>
+</resources>

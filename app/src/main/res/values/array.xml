@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menus">
+        <item>Reading and Downloading</item>
+        <item>Uploading Media</item>
+        <item>Organizing Media </item>
+        <item>Sharing Media</item>
+    </string-array>
+
+    <string-array name="readMenu">
+        <item>List Images in Albums</item>
+        <item>Filter by Date Range</item>
+        <item>Filter by Topic </item>
+
+    </string-array>
+
+
+    <string-array name="filters">
+        <item>PEOPLE</item>
+        <item>BIRTHDAYS</item>
+        <item>WEDDINGS</item>
+        <item>SELFIES</item>
+        <item>ANIMALS</item>
+        <item>FOOD</item>
+        <item>LANDMARKS</item>
+        <item>SPORT</item>
+        <item>PERFORMANCES</item>
+        <item>LANDSCAPES</item>
+
+    </string-array>
+</resources>

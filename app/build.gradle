@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "ke.co.calista.googlephotos"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+
+        exclude 'META-INF/io.netty.versions.properties'
+        exclude 'META-INF/INDEX.LIST'
+
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0-alpha1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha1'
+    implementation 'com.google.android.material:material:1.1.0-alpha02'
+
+
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.afollestad.material-dialogs:core:2.0.0-rc10'
+
+    implementation 'com.google.photos.library:google-photos-library-client:1.1.0'
+
+    implementation 'io.grpc:grpc-netty:1.10.1'
+    implementation 'io.grpc:grpc-protobuf:1.10.1'
+    implementation 'io.grpc:grpc-stub:1.10.1'
+    implementation 'io.grpc:grpc-okhttp:1.10.1'
+    implementation 'com.borax12.materialdaterangepicker:library:1.9'
+    implementation 'com.wang.avi:library:2.1.3'
+
+    implementation('com.github.bumptech.glide:glide:4.8.0') {
+        transitive = true
+        exclude group: 'com.android.support'
+    }
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.squareup.okhttp:okhttp:2.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1"
+
+
+}
