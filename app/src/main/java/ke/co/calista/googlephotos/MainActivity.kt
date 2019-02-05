@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedList
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
 
-                .requestServerAuthCode("148357592852-3i6f40nerbh3bf30cro85doo5fi2e32h.apps.googleusercontent.com",false)
+                .requestServerAuthCode("your oauth web id",false)
                 .requestScopes(Scope("https://www.googleapis.com/auth/photoslibrary.readonly"))
                 .build()
 
