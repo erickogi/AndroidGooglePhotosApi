@@ -65,8 +65,8 @@ object PhotosLibraryClientFactory {
 
         val a = AccessToken(token, null)
         return UserCredentials.newBuilder()
-                .setClientId("148357592852-3i6f40nerbh3bf30cro85doo5fi2e32h.apps.googleusercontent.com")
-                .setClientSecret("JBdV1Oqp0CrTTcXX85NWGJ4q")
+                .setClientId("your client id")
+                .setClientSecret("your client secret")
                 .setAccessToken(a)
                 .build()
     }
